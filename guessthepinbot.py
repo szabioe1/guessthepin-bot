@@ -5,7 +5,7 @@ import string
 
 nums = string.digits
 length = 4
-driver = webdriver.Chrome("C:/Users/Szabi/Documents/chromedriver.exe")
+driver = webdriver.Chrome("<<<YOUR CHROMEDRIVER LOCATION>>>")
 url = "https://www.guessthepin.com"
 driver.get(url)
 attempt = ( ''.join(random.choice(nums) for i in range(length)))
@@ -22,5 +22,3 @@ while True:
     driver.find_element_by_css_selector("#container > form > input:nth-child(5)").click()
 
 
-#container > form > input:nth-child(4)
-#container > form > input:nth-child(5)
